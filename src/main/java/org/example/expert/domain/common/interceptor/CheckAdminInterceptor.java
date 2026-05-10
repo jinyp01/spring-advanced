@@ -18,7 +18,7 @@ public class CheckAdminInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
-        UserRole userRole = UserRole.of(request.getAuthType());
+        UserRole userRole = UserRole.of((String)request.getAttribute("userRole"));
         LocalDateTime reqTime = LocalDateTime.now();
 
         if(!(userRole == UserRole.ADMIN)) {
