@@ -2,7 +2,7 @@ package org.example.expert.domain.admin.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.example.expert.domain.admin.AdminFacade;
-import org.example.expert.domain.user.dto.request.UserRoleChangeRequest;
+import org.example.expert.domain.admin.dto.UserRoleChangeRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/admin")
