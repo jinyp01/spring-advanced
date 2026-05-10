@@ -17,8 +17,7 @@ import java.util.Arrays;
 @Slf4j
 @Component
 public class LoggingAop {
-
-    @Around("execution(* org.example.expert.domain.admin.controller*(..))")
+    @Around("execution(* org.example.expert.domain.admin.controller.AdminController.*(..))")
     public Object commentAop(ProceedingJoinPoint joinPoint) throws Throwable {
 
         ServletRequestAttributes attr =
