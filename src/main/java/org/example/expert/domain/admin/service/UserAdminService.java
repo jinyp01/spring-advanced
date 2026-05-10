@@ -1,4 +1,4 @@
-package org.example.expert.domain.user.service;
+package org.example.expert.domain.admin.service;
 
 import lombok.RequiredArgsConstructor;
 import org.example.expert.domain.common.exception.InvalidRequestException;
