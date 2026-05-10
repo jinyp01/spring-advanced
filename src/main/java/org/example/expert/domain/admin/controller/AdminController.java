@@ -5,6 +5,7 @@ import org.example.expert.domain.admin.AdminFacade;
 import org.example.expert.domain.user.dto.request.UserRoleChangeRequest;
 import org.springframework.web.bind.annotation.*;
 
+@RequestMapping("/admin")
 @RestController
 @RequiredArgsConstructor
 public class AdminController {
